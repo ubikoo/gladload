@@ -1,0 +1,33 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+
+# External dependencies
+3rdparty
+projects
+
+# Compiled source
+*.o
+*.d
+*.a
+*.so
+*.pyc
+
+# Compiled LaTeX and Logs
+*.aux
+*.blg
+*.bbl
+*.log
+*.out
+*.tui
+*.top
+*.synctex.gz
+
+# OSX files
+.DS_Store
+
+# Eclipse files
+.settings
+.cproject
+.project
+
+# Image files
+*.png
