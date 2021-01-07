@@ -1,4 +1,4 @@
-MODNAME  := glad
+MODNAME  := gladloader
 CXX_SRCS += $(filter-out $(wildcard $(ROOTDIR)/$(MODNAME)/src/_*.cpp), \
                          $(wildcard $(ROOTDIR)/$(MODNAME)/src/*.cpp))
 CXX_INCS += $(wildcard $(ROOTDIR)/$(MODNAME)/include/*.hpp)
