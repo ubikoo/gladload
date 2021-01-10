@@ -1,10 +1,5 @@
-MODNAME  := gladload
-CXX_SRCS += $(filter-out $(wildcard $(ROOTDIR)/$(MODNAME)/src/_*.cpp), \
-                         $(wildcard $(ROOTDIR)/$(MODNAME)/src/*.cpp))
-CXX_INCS += $(wildcard $(ROOTDIR)/$(MODNAME)/include/*.hpp)
-
-C_SRCS   += $(filter-out $(wildcard $(ROOTDIR)/$(MODNAME)/src/_*.c), \
-                         $(wildcard $(ROOTDIR)/$(MODNAME)/src/*.c))
-C_INCS   += $(wildcard $(ROOTDIR)/$(MODNAME)/include/*.h)
-
-CFLAGS   += -I$(ROOTDIR)/$(MODNAME)/include
+MODNAME  := .
+SOURCES  += $(filter-out $(wildcard $(ROOTDIR)/src/$(MODNAME)/_*.c), \
+                         $(wildcard $(ROOTDIR)/src/$(MODNAME)/*.c))
+INCLUDES += $(wildcard $(ROOTDIR)/include/$(MODNAME)/*.h)
+CFLAGS   += -I$(ROOTDIR)/include
