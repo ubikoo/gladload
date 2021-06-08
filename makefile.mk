@@ -1,5 +1,4 @@
-MODNAME  := .
-SOURCES  += $(filter-out $(wildcard $(ROOTDIR)/src/$(MODNAME)/_*.c), \
-                         $(wildcard $(ROOTDIR)/src/$(MODNAME)/*.c))
-INCLUDES += $(wildcard $(ROOTDIR)/include/$(MODNAME)/*.h)
+SOURCES  += $(filter-out $(wildcard $(ROOTDIR)/src/_*.c), \
+                         $(wildcard $(ROOTDIR)/src/*.c))
+INCLUDES += $(wildcard $(ROOTDIR)/include/*.h)
 CFLAGS   += -I$(ROOTDIR)/include
