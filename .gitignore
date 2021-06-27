@@ -2,14 +2,21 @@
 
 # External dependencies
 3rdparty
-projects
 
 # Compiled source
 *.o
 *.d
 *.a
 *.so
-*.pyc
+
+# Compiled Java class files
+*.class
+
+# Package files
+*.jar
+
+# Compiled Python bytecode
+*.py[cod]
 
 # Compiled LaTeX and Logs
 *.aux
@@ -20,6 +27,10 @@ projects
 *.tui
 *.top
 *.synctex.gz
+*.pdf
+
+# Unit test reports
+TEST*.xml
 
 # OSX files
 .DS_Store
@@ -29,5 +40,11 @@ projects
 .cproject
 .project
 
+# VScode files
+.vscode
+*.code-workspace
+
 # Image files
 *.png
+*.jpg
+*.tiff
